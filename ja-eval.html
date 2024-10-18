@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <p>click the button to execute js expressions</p>
+  <p id="d"></p>
+  <button onclick="myfunction()">Try it</button>
+  <script>
+    function myfunction(){
+        var x = 17;
+        var y = 22;
+        var z = eval("x+y")+"<br>";
+        var a = eval("2*2")+"<br>";
+        var b = eval("y-x")+"<br>";
+        var res = z+a+b;//concatenates the strings
+        document.getElementById("d").innerHTML=res;//eval()
+
+    }
+  </script>  
+</body>
+</html>
